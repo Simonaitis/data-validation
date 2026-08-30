@@ -1,9 +1,9 @@
 # Court Data Reporting & SQL Validation Lab
 
-Set up a local SQL Server 2022 (Ubuntu 22.04 LTS) environment to test report design, parameter filtering, and data validation using court-style records.
+Set up a local SQL Server 2022 (Ubuntu 22.04 LTS) environment to test report design, parameter filtering, and data validation using "court style" records.
 
 ## Background & Challenges
-Directly querying production tables in reporting tools (like Crystal Reports or SSRS) often causes slow performance and table locks. On top of that, legacy reports frequently suffer from data drift—where summary footers on a printout don't match the actual database transactions.
+Directly querying production tables in reporting tools (such as Crystal Reports or SSRS) often causes slow performance and table locks.
 
 ## Technical Setup
 

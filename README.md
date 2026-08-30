@@ -23,3 +23,11 @@ CaseID  CaseDocketNumber  HeaderReportedTotal  DetailCalculatedTotal  Variance
 43660   SO43660           1294.2529            1294.2529              0.0000
 43661   SO43661           32726.8942           32726.8942             0.0000
 ```
+
+## Lessons Learned & Technical Challenges
+
+* **Finding sqlcmd on Linux:** On Ubuntu, SQL tools sit in /opt/mssql-tools18/bin/. Adding that directory to $PATH made running commands much easier.
+* **AdventureWorks Schema Quirks:** Joining Sales.Customer to Person.Person required matching c.PersonID = p.BusinessEntityID to pull party names properly.
+* **Shell Quote Escaping:** Running raw T-SQL blocks through sqlcmd -Q requires careful quote handling so the terminal doesn't chop up strings like 'Corporate/State Entity'.
+* **Reconciliation Auditing:** Comparing aggregate detail line items plus fees against the header TotalDue verified .00 variance across sample case records.
+

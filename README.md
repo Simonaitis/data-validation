@@ -23,10 +23,7 @@ CaseID  CaseDocketNumber  HeaderReportedTotal  DetailCalculatedTotal  Variance
 43660   SO43660           1294.2529            1294.2529              0.0000
 43661   SO43661           32726.8942           32726.8942             0.0000
 ```
-## Pipeline Proof of Work
-
 ![Database Pipeline Verification](screenshot/database_pipeline.PNG)
-"
 
 ## Lessons Learned & Technical Challenges
 
